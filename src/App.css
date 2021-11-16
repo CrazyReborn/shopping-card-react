@@ -7,8 +7,26 @@ html {
     flex-direction: column;
 
 }
-nav {
+nav.home {
     background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+nav.xbox {
+    background-color: #329b29;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+nav.playstation {
+    background-color: #2D6DB8;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+nav.switch {
+    background-color: #ca3131;
     display: flex;
     justify-content: space-around;
     padding: 2%;
@@ -18,6 +36,7 @@ a {
     text-decoration: none;
     font-size: xx-large;
 }
+
 .greeting {
     margin-top: 15%;
     font-size: 100px;

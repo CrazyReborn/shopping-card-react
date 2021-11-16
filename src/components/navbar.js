@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = (props) => {
+    const {className} = props;
     return (
-        <nav>
+        <nav className={className}>
             <Link to="/">HOME</Link>
             <Link to="/xbox">XBOX</Link>
             <Link to="/playstation">PLAYSTATION</Link>
