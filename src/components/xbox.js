@@ -6,7 +6,7 @@ const Xbox = () => {
     return (
         <div>
             <Navbar className='nav xbox' />
-            <div className='products'>
+            <div className='products xbox'>
                 <Product className='entry' productEntry={xboxSeriesS} />
                 <Product className='entry' productEntry={xboxSeriesX} />
             </div>

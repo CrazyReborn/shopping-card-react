@@ -1,5 +1,6 @@
 import { Route, Routes, BrowserRouter} from "react-router-dom";
 import App from "../App";
+import Cart from "./cart";
 import Playstation from "./playstation";
 import Switch from "./switch";
 import Xbox from "./xbox";
@@ -13,7 +14,7 @@ const RouterSwitch = () => {
                 <Route path='/xbox' element={<Xbox />}></Route>
                 <Route path='/playstation' element={<Playstation />}></Route>
                 <Route path='/switch' element={<Switch />}></Route>
-                <Route path='/cart'></Route>
+                <Route path='/cart' element={<Cart />}></Route>
             </Routes>
             </BrowserRouter>
         </div>
