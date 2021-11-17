@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { useState } from "react/cjs/react.development";
+import cart from "./cart-logic";
 
 const Navbar = (props) => {
     const {className} = props;
@@ -8,7 +10,7 @@ const Navbar = (props) => {
             <Link to="/xbox">XBOX</Link>
             <Link to="/playstation">PLAYSTATION</Link>
             <Link to="/switch">SWITCH</Link>
-            <Link to="/cart">CART</Link>
+            <Link to="/cart">CART: </Link>
         </nav>
     )
 }
