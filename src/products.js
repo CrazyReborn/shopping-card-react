@@ -1,7 +1,7 @@
 import xboxSeriesXImg from './images/xboxX.png';
 import xboxSeriesSImg from './images/seriess.png';
-import playstation5Img from './images/ps5';
-import switchImg from './images/switch';
+import playstation5Img from './images/ps5.png';
+import switchImg from './images/switch.png';
 
 const xboxSeriesX = {
     name: 'Xbox Series X',
