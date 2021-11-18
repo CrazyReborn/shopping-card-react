@@ -4,6 +4,7 @@ import Cart from "./cart";
 import Playstation from "./playstation";
 import Switch from "./switch";
 import Xbox from "./xbox";
+import cart from './cart-logic';
 
 const RouterSwitch = () => {
     return (
