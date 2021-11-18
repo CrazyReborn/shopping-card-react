@@ -101,11 +101,19 @@ img {
 .cart {
     display: flex;
     flex-direction: column;
+    padding: 0% 25%;
 }
 .cart > .entry {
     display: flex;
+    padding: 0;
+    margin-top: 10%;
 }
 
 .cart > img {
-    width: 30%;
+    width: 10%;
+}
+
+.cart > .total {
+    font-size: xx-large;
+    margin-top: 10%;
 }

@@ -15,15 +15,16 @@ const Cart = () => {
                         <div className='cart entry' key={index}>
                         <img src={entry.img} alt={'Picture of ' + entry.name} />
                         <h2>{entry.name}</h2>
-                        <p>Price: {entry.price}</p>
+                        <p>Price: ${entry.price}</p>
                         <button onClick={e => {cart.remove(entry); setTotal(cart.totalCost); setItems(cart.added.length)}}>Remove from Cart</button>
                     </div>
                     )    
                 })  
-                :<div>You have no products in your cart</div>
+                :<div className='total'>You have no products in your cart</div>
                 }
+                {items > 0 && <div className='total'>Total: ${total}</div>}
             </div>
-            {items > 0 && <div>Total: {total}</div>}
+            
         </div>
         
     )
