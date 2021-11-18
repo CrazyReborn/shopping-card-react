@@ -5,7 +5,7 @@ import { useState } from "react";
 import cart from './cart-logic';
 
 const Xbox = () => {
-    const [items, setItems] = useState(cart.added.length)
+    const [items, setItems] = useState(cart.added.length);
     return (
         <div>
             <Navbar items={items} className='nav xbox' />

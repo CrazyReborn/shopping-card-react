@@ -54,6 +54,36 @@ a {
     box-shadow: -1px 1px 25px 0px #329b29;
 }
 
+.entry.ps {
+    height: 23%;
+    width: 17%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -1px 1px 25px 0px #2D6DB8;
+}
+
+.entry.switch.regular {
+    height: 23%;
+    width: 17%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -1px 1px 25px 0px #2D6DB8;
+}
+
+.entry.switch.oled {
+    height: 23%;
+    width: 17%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -1px 1px 25px 0px #ca3131;
+}
+
 img {
     width: 30%;
 }
