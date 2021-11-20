@@ -10,31 +10,35 @@ html, body {
 nav.home {
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 2%;
 }
 nav.xbox {
     background-color: #329b29;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 2%;
 }
 nav.playstation {
     background-color: #2D6DB8;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 2%;
 }
 nav.switch {
     background-color: #ca3131;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 2%;
 }
 a {
     color: white;
     text-decoration: none;
-    font-size: xx-large;
+    font-size: 2rem;
 }
 
 .greeting {
@@ -45,8 +49,8 @@ a {
 }
 
 .xbox > .entry {
-    height: 23%;
-    width: 17%;
+    height: 17em;
+    width: 19em;
     border-radius: 10%;
     display: flex;
     flex-direction: column;
@@ -55,8 +59,8 @@ a {
 }
 
 .entry.ps {
-    height: 23%;
-    width: 17%;
+    height: 17em;
+    width: 19em;
     border-radius: 10%;
     display: flex;
     flex-direction: column;
@@ -65,8 +69,8 @@ a {
 }
 
 .entry.switch.regular {
-    height: 23%;
-    width: 17%;
+    height: 17em;
+    width: 19em;
     border-radius: 10%;
     display: flex;
     flex-direction: column;
@@ -75,8 +79,8 @@ a {
 }
 
 .entry.switch.oled {
-    height: 23%;
-    width: 17%;
+    height: 17em;
+    width: 19em;
     border-radius: 10%;
     display: flex;
     flex-direction: column;
@@ -90,6 +94,7 @@ img {
 
 .products {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     height: 100%;
     margin-top: 15%;
@@ -116,4 +121,57 @@ img {
 .cart > .total {
     font-size: xx-large;
     margin-top: 10%;
+}
+
+@media (max-width: 810px) {
+    .nav {
+        gap: 1em;
+    }
+    .products {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 15%;
+        align-content: center;
+        gap: 5em;
+        height: max-content;
+    }
+    .xbox > .entry {
+        height: 17em;
+        width: 19em;
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: -1px 1px 25px 0px #329b29;
+    }
+    .entry.ps {
+        height: 17em;
+        width: 19em;
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: -1px 1px 25px 0px #2D6DB8;
+    }
+    
+    .entry.switch.regular {
+        height: 17em;
+        width: 19em;
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: -1px 1px 25px 0px #2D6DB8;
+    }
+    
+    .entry.switch.oled {
+        height: 17em;
+        width: 19em;
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: -1px 1px 25px 0px #ca3131;
+    }
 }
